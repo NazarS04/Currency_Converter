@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+.modalWindow {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modalWindow-open {
+  display: flex;
+}
+
+.inform {
+  margin-top: -200px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.inform__title {
+  color: #fff;
+  font-size: 40px;
+  letter-spacing: 0.2rem;
+  line-height: 2;
+  text-transform: uppercase;
+  text-shadow: 0 1px 1px black, 0 2px 2px black, 0 3px 3px black, 0 4px 4px black, 0 5px 5px black;
+}
+
+.main {
+  min-height: 100vh;
+  background-color: #343434;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fields {
+  margin-top: -150px;
+  width: 100%;
+  padding: 0 15px;
+  max-width: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.fields__swap .arrow {
+  font-size: 18px;
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+}
+.fields input::-webkit-outer-spin-button,
+.fields input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.fields__select {
+  font-family: Raleway;
+  font-weight: 800;
+  letter-spacing: 0.1rem;
+  margin-right: 10px;
+  border: 0;
+  padding: 5px 10px;
+  background-color: inherit;
+  color: white;
+  outline: 0;
+}
+.fields__select:last-child {
+  margin: 0 0 0 10px;
+}
+.fields__input {
+  font-family: "Source Sans Pro";
+  padding: 5px 10px;
+  outline: 0;
+  border-radius: 10px;
+}
+
+@media (max-width: 680px) {
+  .fields {
+    flex-direction: column;
+    min-height: 149px;
+  }
+  .fields__cont {
+    display: flex;
+  }
+  .fields__select {
+    order: 0;
+    margin-right: 20px;
+  }
+  .fields__select:last-child {
+    margin-left: 0;
+    margin-right: 20px;
+  }
+  .fields__input {
+    order: 1;
+  }
+}
+@media (max-width: 320px) {
+  .fields__input {
+    width: 140px;
+  }
+  .fields__select {
+    margin-right: 10px;
+  }
+  .fields__select:last-child {
+    margin-right: 10px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

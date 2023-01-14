@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="normalize/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="modalWindow">
+        <div class="inform">
+            <h1 class="inform__title">connection to server lost</h1>
+        </div>
+    </div>
+    <div class="wrapper">
+        <main class="main">
+            <div class="fields">
+                <div class="fields__cont">
+                     <select name="" class="fields__select">
+                        <option value="-1" disabled selected>Валюта</option>
+                    </select>
+                    <input type="number" class="fields__input first-input" disabled>
+                </div>
+                <div class="fields__swap">
+                    <i class="fa-solid fa-arrow-right-arrow-left arrow"></i>
+                </div>
+                <div class="fields__cont">
+                    <input type="number" class="fields__input second-input" disabled>
+                    <select name="" class="fields__select">
+                        <option value="-1" disabled selected>Валюта</option>
+                    </select>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
