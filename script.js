@@ -93,7 +93,7 @@ function inputSelection(event){
 }
 
 function conversion(input, leftCurrency, rightCurrency) {
-    input.value = Math.floor(((this.value * leftCurrency)/rightCurrency)*100)/100;
+    input.value = Math.round(((this.value * leftCurrency)/rightCurrency)*100)/100;
 }
 
 function minusAndPlusDisabledInput(event) {
