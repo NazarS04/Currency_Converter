@@ -1,0 +1,117 @@
+@import "./normalize.css";
+
+body {
+  color: #fff;
+  background-color: #343434;
+}
+
+input::placeholder {
+  font-size: inherit;
+  color: inherit;
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  padding: 10px;
+
+  min-height: 100dvh;
+}
+
+.swap-btn {
+  font-size: 25px;
+  color: inherit;
+  line-height: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.fields {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.fields2 {
+  flex-direction: row-reverse;
+}
+
+.fields__input {
+  max-width: 200px;
+  width: 100%;
+  padding: 5px 10px;
+
+  border: 1px solid #fff;
+  border-radius: 15px;
+  color: inherit;
+  background-color: transparent;
+  outline: 0;
+}
+
+.fields__input_disabled{
+  color:#808080FF;
+  border-color: #e10000;
+}
+
+.select-cont {
+  position: relative;
+}
+
+.select-cont__select {
+  appearance: none;
+
+  padding: 5px 30px 5px 10px;
+
+  border: 1px solid #fff;
+  border-radius: 10px;
+  color: inherit;
+  background-color: transparent;
+  outline: 0;
+  cursor: pointer;
+}
+
+.select-cont__arrow {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  z-index: -1;
+
+  transform: translateY(-50%);
+
+  line-height: 0;
+  font-size: 20px;
+}
+
+.preloader {
+  max-width: 100px;
+  width: 100%;
+  aspect-ratio: 1/1;
+
+  border-radius: 50%;
+  border: 5px solid transparent;
+  border-right-color: #fff;
+  animation: Rotate 2s linear infinite;
+}
+
+@keyframes Rotate {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  #root {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .fields2 {
+    flex-direction: row;
+  }
+}
